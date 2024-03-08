@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.Kreed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="./images/Logo.png" alt="Logo">
+            </a>
+            <div>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about us">About</a></li>
+                    <li><a href="#how it works">How </a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#getstarted">Get Started</a>
+            </div>
+        </nav>
+        <main>
+
+            <section class="banking_needs">
+                <h1>Connecting all <br> your banking <br> needs</h1>
+                <p>A smart mobile application you can control your <br> business needs</p>
+            </section>
+            <section class="img">
+                <img src="./images/image.png" alt="phone">
+            </section>
+        </main>
+        <div class="btn">
+
+            <button>
+                <img src="./images/apple.png" alt="apple">
+                <a href="#">Download App</a>
+            </button>
+            <button>
+                <img src="./images/google-play.png" alt="play market">
+                <a href="#">Download App</a>
+            </button>
+        </div>
+    </header>
+    <dialog id="dialog">
+        <a href="#">
+          <img src="./images/logo.png" alt="logo">
+        </a>
+        <nav>
+          <ul>
+            <li><a style="color: #37806b; background: #ccc" href="#">home</a></li>
+            <li><a href="project">project</a></li>
+            <li><a href="services">services</a></li>
+            <li><a href="about">about</a></li>
+            <li><a href="blog">blog</a></li>
+            <li><a href="shop">shop</a></li>
+            <li><a href="contact">contact</a></li>
+          </ul>
+        </nav>
+        <button>
+          <span class="material-symbols-outlined" id="closeBtn">close</span>
+        </button>
+      </dialog>
+    
+      <script>
+        const menuBtn = document.getElementById('menuBtn')
+        const dialog = document.getElementById("dialog");
+        const closeBtn = document.getElementById("closeBtn");
+    
+        menuBtn.onclick = () => dialog.showModal();
+        closeBtn.onclick = () => dialog.close()
+    
+      </script>
+</body>
+</html>
